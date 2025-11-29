@@ -1,14 +1,14 @@
-function Navbar(){
-    <nav style={{display:"flex",gap:"20px",padding:"10px"}}>
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-
-
-
-
+function Navbar() {
+  return (
+    <nav className="Navbar">
+      <Link to="/">Home</Link>
+      <Link to="/About">About</Link>
+      <Link to="/Contact">Contact</Link>
     </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
